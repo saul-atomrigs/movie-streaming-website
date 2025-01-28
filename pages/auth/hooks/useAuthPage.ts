@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import axios from 'axios';
 import type { VariantType } from '../types';
+import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 export function useAuthPath() {
+  const router = useRouter();
+
   const [userInfo, setUserInfo] = useState({
     email: '',
     username: '',
@@ -23,6 +27,21 @@ export function useAuthPath() {
     }
   };
 
+  const login = async () => {
+    try {
+      await signIn('credentials', {
+        email: userInfo.email,
+        password: userInfo.password,
+        redirect: false,
+        callbackUrl: '/',
+      });
+
+      router.push('/');
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return {
     userInfo,
     setUserInfo,
@@ -30,5 +49,6 @@ export function useAuthPath() {
     setVariant,
     IS_LOGIN,
     register,
+    login,
   };
 }
