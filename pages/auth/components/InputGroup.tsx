@@ -30,6 +30,7 @@ export default function InputGroup({ variant, userInfo, setUserInfo }: InputGrou
       <Input
         label="비밀번호"
         id="password"
+        type="password"
         value={userInfo.password}
         onChange={e => setUserInfo({ ...userInfo, password: e.target.value })}
       />

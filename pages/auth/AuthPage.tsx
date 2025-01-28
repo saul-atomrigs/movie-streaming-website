@@ -9,7 +9,7 @@ import AuthPageLayout from './components/AuthPageLayout';
 import { useAuthPath } from './hooks/useAuthPage';
 
 export default function AuthPage() {
-  const { userInfo, setUserInfo, variant, setVariant, IS_LOGIN } = useAuthPath();
+  const { userInfo, setUserInfo, variant, setVariant, IS_LOGIN, register } = useAuthPath();
 
   return (
     <AuthPageLayout>
@@ -19,7 +19,7 @@ export default function AuthPage() {
       <AuthBoxContainer>
         <Header IS_LOGIN={IS_LOGIN} />
         <InputGroup variant={variant} userInfo={userInfo} setUserInfo={setUserInfo} />
-        <CTA IS_LOGIN={IS_LOGIN} />
+        <CTA onClick={register} IS_LOGIN={IS_LOGIN} />
         <Footer IS_LOGIN={IS_LOGIN} setVariant={setVariant} />
       </AuthBoxContainer>
     </AuthPageLayout>
