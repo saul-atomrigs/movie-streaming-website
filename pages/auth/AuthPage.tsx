@@ -6,10 +6,13 @@ import AuthBoxContainer from './components/AuthBoxContainer';
 import NavigationBar from '@/src/components/NavigationBar';
 import Logo from '@/src/components/Logo';
 import AuthPageLayout from './components/AuthPageLayout';
+import SocialLogin from '@/src/components/SocialLogin';
 import { useAuthPath } from './hooks/useAuthPage';
+import { FcGoogle } from 'react-icons/fc';
 
 export default function AuthPage() {
-  const { userInfo, setUserInfo, variant, setVariant, IS_LOGIN, register, login } = useAuthPath();
+  const { userInfo, setUserInfo, variant, setVariant, IS_LOGIN, register, login, googleLogin } =
+    useAuthPath();
 
   return (
     <AuthPageLayout>
@@ -20,6 +23,9 @@ export default function AuthPage() {
         <Header IS_LOGIN={IS_LOGIN} />
         <InputGroup variant={variant} userInfo={userInfo} setUserInfo={setUserInfo} />
         <CTA onClick={IS_LOGIN ? login : register} IS_LOGIN={IS_LOGIN} />
+        <SocialLogin onClick={googleLogin}>
+          <FcGoogle size={30} />
+        </SocialLogin>
         <Footer IS_LOGIN={IS_LOGIN} setVariant={setVariant} />
       </AuthBoxContainer>
     </AuthPageLayout>

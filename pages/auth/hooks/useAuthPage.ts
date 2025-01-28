@@ -42,6 +42,12 @@ export function useAuthPath() {
     }
   };
 
+  const googleLogin = () => {
+    signIn('google', {
+      callbackUrl: '/',
+    });
+  };
+
   return {
     userInfo,
     setUserInfo,
@@ -50,5 +56,6 @@ export function useAuthPath() {
     IS_LOGIN,
     register,
     login,
+    googleLogin,
   };
 }
