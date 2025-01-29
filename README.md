@@ -18,6 +18,8 @@
 
 블로그: https://dev.to/solleedata/baneunghyeong-keomponeonteu-ggalggeumhage-mandeulgi-1n1c
 
+### 고민 III: e2e 테스트와 유닛 테스트의 기준
+
 ## 스크린샷
 
 | Login                                                                                                | Signup                                                                                                | What is being tested against |
