@@ -10,14 +10,9 @@ import Responsive from '../Responsive';
 
 export default function NavigationBar() {
   const router = useRouter();
-  const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
   const handleClickLogo = () => {
     router.push('/');
-  };
-
-  const handleToggleMenu = () => {
-    setIsMobileMenuVisible(prev => !prev);
   };
 
   return (
