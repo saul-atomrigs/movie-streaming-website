@@ -20,6 +20,12 @@
 
 ### 고민 III: e2e 테스트와 유닛 테스트의 기준
 
+e2e는 보통 치밀하게 모든 케이스를 테스트하진 않는다. 
+
+경우의 수가 많다면 e2e가 아니라 component나 unit test로 분리할 수 없을지 고민해보는 게 좋다.
+
+블로그:
+
 ## 스크린샷
 
 | Login                                                                                                | Signup                                                                                                | What is being tested against |
