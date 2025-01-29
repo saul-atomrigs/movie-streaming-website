@@ -4,6 +4,7 @@ import Responsive from '../Responsive';
 import DesktopMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
 import SubMenu from './SubMenu';
+import NavigationBarContainer from './NavigationBarContainer';
 
 export default function NavigationBar() {
   const router = useRouter();
@@ -13,14 +14,10 @@ export default function NavigationBar() {
   };
 
   return (
-    <div className="w-full fixed z-40">
-      <div className="px-4 h-16 md:h-20 flex flex-row items-center transition duration-500 bg-zinc-800 bg-opacity-90">
-        <Logo onClick={handleClickLogo} />
-
-        <Responsive mobile={<MobileMenu />} desktop={<DesktopMenu />} />
-
-        <SubMenu />
-      </div>
-    </div>
+    <NavigationBarContainer>
+      <Logo onClick={handleClickLogo} />
+      <Responsive mobile={<MobileMenu />} desktop={<DesktopMenu />} />
+      <SubMenu />
+    </NavigationBarContainer>
   );
 }
