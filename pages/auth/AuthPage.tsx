@@ -3,22 +3,25 @@ import Footer from './components/Footer';
 import InputGroup from './components/InputGroup';
 import Header from './components/Header';
 import AuthBoxContainer from './components/AuthBoxContainer';
-import NavigationBar from '@/src/components/NavigationBar';
-import Logo from '@/src/components/Logo';
 import AuthPageLayout from './components/AuthPageLayout';
 import SocialLogin from '@/src/components/SocialLogin';
 import { useAuthPath } from './hooks/useAuthPage';
 import { FcGoogle } from 'react-icons/fc';
+import Logo from '@/src/components/Logo';
+import { useRouter } from 'next/router';
 
 export default function AuthPage() {
+  const router = useRouter();
   const { userInfo, setUserInfo, variant, setVariant, IS_LOGIN, register, login, googleLogin } =
     useAuthPath();
 
+  const handleClickLogo = () => {
+    router.push('/');
+  };
+
   return (
     <AuthPageLayout>
-      <NavigationBar>
-        <Logo />
-      </NavigationBar>
+      <Logo onClick={handleClickLogo} />
       <AuthBoxContainer>
         <Header IS_LOGIN={IS_LOGIN} />
         <InputGroup variant={variant} userInfo={userInfo} setUserInfo={setUserInfo} />
