@@ -1,7 +1,9 @@
+import NavigationBar from '@/src/components/NavigationBar';
+
 export default function Home() {
   return (
     <>
-      <h1>netflix clone</h1>
+      <NavigationBar />
     </>
   );
 }
