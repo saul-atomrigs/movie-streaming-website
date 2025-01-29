@@ -1,12 +1,9 @@
 import { useRouter } from 'next/router';
 import Logo from '../Logo';
-import NavigationItem from './NavigationItem';
-import { BsBell, BsChevronDown, BsSearch } from 'react-icons/bs';
-import MobileMenu from './MobileMenu';
-import { useState } from 'react';
-import Image from 'next/image';
-import DesktopMenu from './DesktopMenu';
 import Responsive from '../Responsive';
+import DesktopMenu from './DesktopMenu';
+import MobileMenu from './MobileMenu';
+import SubMenu from './SubMenu';
 
 export default function NavigationBar() {
   const router = useRouter();
@@ -22,26 +19,7 @@ export default function NavigationBar() {
 
         <Responsive mobile={<MobileMenu />} desktop={<DesktopMenu />} />
 
-        <div className="flex flex-row ml-auto gap-7 items-center">
-          <div className="text-gray-200 hover:text-gray-300 cursor-pointer">
-            <BsSearch size={20} />
-          </div>
-          <div className="text-gray-200 hover:text-gray-300 cursor-pointer">
-            <BsBell size={20} />
-          </div>
-          <div className="flex flex-row items-center gap-2 cursor-pointer relative">
-            <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
-              <Image
-                src="/images/profile.png"
-                layout="responsive"
-                width={100}
-                height={100}
-                alt="profile"
-              />
-            </div>
-            <BsChevronDown className="text-white transition" />
-          </div>
-        </div>
+        <SubMenu />
       </div>
     </div>
   );
