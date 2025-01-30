@@ -26,7 +26,7 @@ e2e는 보통 치밀하게 모든 케이스를 테스트하진 않는다.
 
 블로그:
 
-## 스크린샷
+## 데모 & 스크린샷
 
 **프로덕션 배포: https://movie-streaming-website-flax.vercel.app**
 - 테스트 로그인 아이디: test@sldf.com
