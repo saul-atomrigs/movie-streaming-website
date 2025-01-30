@@ -23,13 +23,7 @@ export default function SubMenu() {
         className="flex flex-row items-center gap-2 cursor-pointer relative"
       >
         <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
-          <Image
-            src="/images/profile.png"
-            layout="responsive"
-            width={100}
-            height={100}
-            alt="profile"
-          />
+          <Image src="/images/profile.png" width={100} height={100} alt="profile" />
         </div>
         <BsChevronDown
           className={`text-white transition ${isSubmenuVisible ? 'rotate-180' : 'rotate-0'}`}

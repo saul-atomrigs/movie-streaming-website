@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface AccountMenuProps {
   visible: boolean;
 }
@@ -11,7 +13,9 @@ export default function AccountMenu({ visible }: AccountMenuProps) {
     <div className="bg-black absolute w-56 top-14 right-0 py-5 flex-col">
       <div className="flex flex-col gap-3">
         <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
-          <img
+          <Image
+            width={20}
+            height={20}
             src="/images/profile.png"
             alt="profile"
             className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden"
