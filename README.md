@@ -28,6 +28,9 @@ e2e는 보통 치밀하게 모든 케이스를 테스트하진 않는다.
 
 ## 스크린샷
 
+테스트 로그인 아이디: test@
+테스트 비밀번호: 123123
+
 | Login                                                                                                | Signup                                                                                                | What is being tested against |
 | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------- |
 | ![Login Screenshot](https://github.com/user-attachments/assets/5fcf8b45-d2ee-4ed5-a998-17c3e4b42a7d) | ![Signup Screenshot](https://github.com/user-attachments/assets/186c4eed-e378-4f85-905c-9421815b430a) | Test description goes here   |
