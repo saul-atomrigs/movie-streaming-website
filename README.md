@@ -36,6 +36,6 @@ e2e는 보통 치밀하게 모든 케이스를 테스트하진 않는다.
 - 테스트 로그인 아이디: test@sldf.com
 - 테스트 비밀번호: 123123
 
-| Login                                                                                                | Signup                                                                                                | What is being tested against |
+| 로그인                                                                                                | 회원가입                                                                                                | 메인페이지 |
 | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------- |
-| ![Login Screenshot](https://github.com/user-attachments/assets/5fcf8b45-d2ee-4ed5-a998-17c3e4b42a7d) | ![Signup Screenshot](https://github.com/user-attachments/assets/186c4eed-e378-4f85-905c-9421815b430a) | Test description goes here   |
+| ![Login Screenshot](https://github.com/user-attachments/assets/5fcf8b45-d2ee-4ed5-a998-17c3e4b42a7d) | ![Signup Screenshot](https://github.com/user-attachments/assets/186c4eed-e378-4f85-905c-9421815b430a) |  <img width="1440" alt="스크린샷 2025-01-31 오후 5 55 45" src="https://github.com/user-attachments/assets/36066c75-2bea-46e5-8452-2960e7207d50" /> |
