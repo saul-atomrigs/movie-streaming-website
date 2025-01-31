@@ -1,3 +1,7 @@
+## 프로젝트 구조도
+<img width="537" alt="스크린샷 2025-01-31 오후 5 50 06" src="https://github.com/user-attachments/assets/fc8395e1-b873-4ccc-80f2-5d383a29c10b" />
+
+
 ## 고민했던 부분들
 
 ### 고민 I: "지우기 쉬운 코드"
