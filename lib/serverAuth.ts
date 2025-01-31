@@ -23,3 +23,4 @@ const serverAuth = async (req: NextApiRequest) => {
 };
 
 export { serverAuth };
+export default serverAuth;

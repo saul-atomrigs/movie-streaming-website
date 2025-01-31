@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Login Page', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('http://localhost:3000/auth');
+    await page.goto('/auth');
   });
 
   test('should load login page correctly', async ({ page }) => {
@@ -16,7 +16,7 @@ test.describe('Login Page', () => {
     await page.getByLabel('비밀번호').fill('123123');
     await page.getByRole('button', { name: '로그인' }).click();
 
-    await expect(page).toHaveURL('http://localhost:3000');
+    await expect(page).toHaveURL('/');
   });
 
   test('should toggle between login and register', async ({ page }) => {
@@ -34,6 +34,6 @@ test.describe('Login Page', () => {
 
   test('logo should navigate to home page', async ({ page }) => {
     await page.getByRole('heading', { name: '넷플릭스' }).click();
-    await expect(page).toHaveURL('http://localhost:3000');
+    await expect(page).toHaveURL('/');
   });
 });
