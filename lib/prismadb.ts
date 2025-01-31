@@ -5,4 +5,5 @@ if (process.env.NODE_ENV === 'production') {
   global.prismadb = client;
 }
 
+export { client };
 export default client;
