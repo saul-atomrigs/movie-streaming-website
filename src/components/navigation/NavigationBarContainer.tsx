@@ -1,6 +1,6 @@
-interface NavigationBarContainerProps {
-  children: React.ReactNode;
-}
+import type { PropsWithChildren } from 'react';
+
+type NavigationBarContainerProps = PropsWithChildren<{}>;
 
 export default function NavigationBarContainer({ children }: NavigationBarContainerProps) {
   return (

@@ -1,3 +1,5 @@
+import type { PropsWithChildren } from 'react';
+
 interface VideoPlayerProps {
   videoUrl: string;
 }
@@ -59,7 +61,7 @@ function Description({ title, description }: VideoDescriptionProps) {
   );
 }
 
-function Wrapper({ children }: { children: React.ReactNode }) {
+function Wrapper({ children }: PropsWithChildren<{}>) {
   return <div className="absolute top-[30%] md:top-[40%] ml-4 md:ml-16">{children}</div>;
 }
 
