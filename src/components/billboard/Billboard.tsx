@@ -1,4 +1,4 @@
-import useBillboard from '@/hooks/useBillboard';
+import useBillboard from './hooks/useBillboard';
 import Video from './Video';
 
 export default function Billboard() {
