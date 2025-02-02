@@ -7,3 +7,4 @@ const fetcher = async (url: string) => {
 };
 
 export default fetcher;
+export { fetcher };
