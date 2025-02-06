@@ -12,7 +12,7 @@
 
 하지만 문제는 next.js의 `pages` 디렉토리에는 "페이지" 컴포넌트만 있어야 한다는 것이다.
 
-트러블슈팅: https://dev.to/solleedata/peijibyeolro-keomponeonteu-yutil-hug-taib-moaseo-gwanrihagi-feat-nextjs-peiji-rauting-2hcn
+블로그: https://dev.to/solleedata/peijibyeolro-keomponeonteu-yutil-hug-taib-moaseo-gwanrihagi-feat-nextjs-peiji-rauting-2hcn
 
 ### 고민 II: 반응형 컴포넌트를 깔끔하게 구현하기
 
