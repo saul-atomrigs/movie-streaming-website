@@ -4,10 +4,10 @@ import InputGroup from './components/InputGroup';
 import Header from './components/Header';
 import AuthBoxContainer from './components/AuthBoxContainer';
 import AuthPageLayout from './components/AuthPageLayout';
-import SocialLogin from '@/src/components/SocialLogin';
+import SocialLogin from '@/components/SocialLogin';
 import { useAuthPath } from './hooks/useAuthPage';
 import { FcGoogle } from 'react-icons/fc';
-import Logo from '@/src/components/Logo';
+import Logo from '@/components/Logo';
 import { useRouter } from 'next/router';
 
 export default function AuthPage() {

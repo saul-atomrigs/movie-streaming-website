@@ -1,7 +1,7 @@
-import Billboard from '@/src/components/billboard';
-import useMovieList from '@/src/components/movies/hooks/useMovieList';
-import Movie from '@/src/components/movies/Movie';
-import NavigationBar from '@/src/components/navigation/NavigationBar';
+import Billboard from '@/components/billboard';
+import useMovieList from '@/components/movies/hooks/useMovieList';
+import Movie from '@/components/movies/Movie';
+import NavigationBar from '@/components/navigation/NavigationBar';
 
 export default function Home() {
   const { data: movies = [] } = useMovieList();
