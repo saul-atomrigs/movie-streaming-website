@@ -31,6 +31,6 @@ e2e는 보통 치밀하게 모든 케이스를 테스트하진 않는다.
 ## 프로덕션 배포
 
 **프로덕션 배포: https://movie-streaming-website-flax.vercel.app/auth**
-- 테스트 로그인 아이디: test@sldf.com
-- 테스트 비밀번호: 123123
+- 테스트 로그인 아이디: test@email.com
+- 테스트 비밀번호: Test123!
 
