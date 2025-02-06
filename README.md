@@ -1,9 +1,3 @@
-## 프로덕션 배포
-
-**프로덕션 배포: https://movie-streaming-website-flax.vercel.app/auth**
-- 테스트 로그인 아이디: test@email.com
-- 테스트 비밀번호: Test123!
-
 ## 프로젝트 구조도
 <img width="537" alt="스크린샷 2025-01-31 오후 5 50 06" src="https://github.com/user-attachments/assets/fc8395e1-b873-4ccc-80f2-5d383a29c10b" />
 
@@ -34,3 +28,8 @@ e2e는 보통 치밀하게 모든 케이스를 테스트하진 않는다.
 
 경우의 수가 많다면 e2e가 아니라 component나 unit test로 분리할 수 없을지 고민해보는 게 좋다.
 
+## 프로덕션 배포
+
+**프로덕션 배포: https://movie-streaming-website-flax.vercel.app/auth**
+- 테스트 로그인 아이디: test@email.com
+- 테스트 비밀번호: Test123!
